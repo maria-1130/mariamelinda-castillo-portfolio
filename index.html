@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Castillo | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <nav>
+        <h2>Maria Castillo</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   <section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Hi, I'm <span>Maria Castillo</span></h1>
+
+        <h2>BS Information Technology Graduate</h2>
+
+        <p>
+            Passionate about Web Development, Artificial Intelligence,
+            and creating innovative software solutions.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="assets/Castillo_Resume.pdf"
+   class="btn-secondary"
+   download>
+    📄 Download Resume
+</a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="images/profile.jfif" alt="Maria Castillo">
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I'm <strong>Maria Castillo</strong>, a Bachelor of Science in Information Technology graduate with a passion for web development, artificial intelligence, and software engineering. I enjoy building user-friendly web applications and continuously learning new technologies to solve real-world problems.
+    </p>
+
+    <p>
+        During my academic journey and internship, I gained experience in web development, ERP testing, documentation, and AI-based system development. My goal is to become a software developer who creates innovative and impactful digital solutions.
+    </p>
+
+</section>
+<section id="skills" class="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">PHP</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Canva</div>
+        <div class="skill-card">Figma</div>
+
+    </div>
+
+</section>
+
+<section id="projects" class="projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="project-container">
+
+       <div class="project-card">
+
+    <h3>💊 Pharmacy Management System</h3>
+
+    <p>
+        A desktop-based Pharmacy Management System developed using Python and SQL Database. The system manages medicine inventory, stock monitoring, sales transactions, and report generation through a user-friendly interface.
+    </p>
+
+    <h4>Technologies Used</h4>
+
+    <p>Python • SQL Database</p>
+
+   <a href="#"
+   class="project-btn"
+   onclick="openVideo('videos/Pharmacy DB Presentation.mp4')">
+   🎥 Watch Presentation
+</a>
+
+</div>
+
+        <div class="project-card">
+
+    <h3>CliniTrack</h3>
+
+    <p>
+        AI Illness Prediction System for Health Risk Detection using the Decision Tree algorithm.
+    </p>
+
+    <h4>Technologies Used</h4>
+
+    <p>React js • PouchDB • Decision Tree</p>
+
+   <a href="#"
+   class="project-btn"
+   onclick="openVideo('videos/clinitrack.mp4')">
+   🎥 Watch Demo
+</a>
+
+</div>
+
+        <div class="project-card">
+            <h3>ASEAN CENTRE FOR BIODIVERSITY Internship</h3>
+            <p>
+                ERP Sandbox Testing, Process Documentation, Flowchart Creation, and Bug Reporting during internship.
+            </p>
+
+            <h4>Technologies Used</h4>
+            <p>ERP • SQL • Documentation</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="education" class="education">
+
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Bachelor of Science in Information Technology</h3>
+<p>Colegio de San Juan de Letran Calamba</p>
+<p>2022 - 2026</p>
+</div>
+
+</div>
+
+</section>
+<section id="experience" class="experience">
+
+<h2>Experience</h2>
+
+<div class="experience-card">
+
+<h3>IT Intern</h3>
+
+<h4>ASEAN CENTRE for BIODIVERSITY</h4>
+
+<ul>
+
+<li>ERP Sandbox Testing</li>
+
+<li>Process Documentation</li>
+
+<li>Business Process Flow</li>
+
+<li>Bug Reporting</li>
+
+<li>System Validation</li>
+
+</ul>
+
+</div>
+
+</section>
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email</p>
+
+<p>mariamelindacastillo11@gmail.com/mariamelindacastillo1989@gmail.com</p>
+
+<p>GitHub</p>
+
+<p>github.com/maria-1130</p>
+
+<p>LinkedIn</p>
+
+<p>linkedin.com/in/Maria Melinda Castillo</p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Maria Castillo
+
+</p>
+
+</footer>
+   
+   <!-- Video Modal -->
+<div id="videoModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <video id="demoVideo" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+</div> 
+
+ <script src="script.js"></script>
+
+
+
+</body>
+</html>

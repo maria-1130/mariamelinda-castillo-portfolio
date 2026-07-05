@@ -1,0 +1,405 @@
+html{
+    scroll-behavior:smooth;
+}
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8fbff, #edf4ff);
+    color: #333;
+}
+/* Navigation */
+nav {
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Name */
+nav h2 {
+    font-size: 28px;
+}
+
+/* Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+    padding:100px 40px;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #2563eb;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#2563eb;
+}
+
+.hero h2{
+    margin-bottom:20px;
+}
+
+.hero p{
+    text-align:left;
+    margin-bottom:40px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn,
+.btn-secondary{
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.btn-secondary{
+    border:2px solid #2563eb;
+    color:#2563eb;
+}
+
+.btn-secondary:hover{
+    background:#2563eb;
+    color:white;
+}
+/* ===========================
+   About Section
+=========================== */
+
+.about{
+    max-width:1000px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.about p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:25px;
+    text-align:justify;
+}
+/* ===========================
+   Skills Section
+=========================== */
+
+.skills{
+    max-width:1200px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.skills h2{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:40px;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    padding:20px 30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    background:#2563eb;
+    color:white;
+}
+/* ===========================
+   Projects
+=========================== */
+
+.projects{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.projects h2{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:50px;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.project-card{
+    width:330px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    text-align:left;
+    line-height:1.7;
+}
+
+.project-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-btn:hover{
+    background:#1d4ed8;
+}
+footer{
+    background:#2563eb;
+    color:white;
+    padding:25px;
+    text-align:center;
+    margin-top:80px;
+}
+/* ===========================
+   Section Scroll Offset
+=========================== */
+
+section{
+    scroll-margin-top:100px;
+}
+
+/* ===========================
+   Education
+=========================== */
+
+.education{
+    max-width:1000px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.education h2{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.timeline-item{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+/* ===========================
+   Experience
+=========================== */
+
+.experience{
+    max-width:1000px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.experience h2{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.experience-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.experience-card h3{
+    color:#2563eb;
+}
+
+.experience-card ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.experience-card li{
+    margin:12px 0;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+.contact{
+    max-width:800px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.contact p{
+    text-align:center;
+    margin:15px 0;
+    font-size:20px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:100px;
+}
+
+/* ===========================
+   Video Modal
+=========================== */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.8);
+}
+
+.modal-content{
+    position:relative;
+    width:80%;
+    max-width:900px;
+    margin:5% auto;
+}
+
+.modal video{
+    width:100%;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    right:-10px;
+    top:-40px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
